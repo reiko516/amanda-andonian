@@ -13,10 +13,12 @@ I wanted to keep the site as simple as possible so that I didn't overextend myse
 The design itself is meant to reflect my history personality. At the top, a skyline of San Francisco's Outer Sunset (where I live) serves as the header. The background image is a PNG of a paper texture because I love to write. At first, I didn't have the main body enclosed by a white background, but I decided later that the page felt too floaty without it.
 
 Initial Wireframe
+=================
 
 ![Screenshot](https://raw.github.com/reiko516/amanda-andonian/master/wireframes/home.png)
 
 Mockups
+=======
 
 ![Screenshot](https://raw.github.com/reiko516/amanda-andonian/master/mockup-jpgs/home-page1.jpg)
 
