@@ -463,12 +463,20 @@ input {
 	width: 225px;
 }
 
+
 #twitterFeed p {
 	text-align: center;
 }
 
 #myTweets p {
 	text-align: left;
+}
+
+#myTweets li.tweet {
+	border-bottom: 1px solid #c3c3c3;
+	font-size: 12px;
+	margin-bottom: 15px;
+	padding-bottom: 15px; 
 }
 
 
