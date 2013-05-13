@@ -178,6 +178,7 @@ nav {
 	margin-bottom: 100px;
 }
 
+#allContent,
 #recommended {
 	margin-left: 50px
 }
@@ -353,19 +354,13 @@ nav.global-nav {
 	border-bottom: 1px solid #000000;
 	margin-bottom: 30px;
 	top: 0px;
+	width: 900px;
 }
 
 #list-nav {
 	border-bottom: none;
 	font-family: "MuliLight";
-	margin: 0px;
-	padding: 0px;
 	width: 900px;
-}
-
-#list-nav ul {
-	margin: 0px;
-	padding: 0px;
 }
 
 #list-nav li {
@@ -375,8 +370,8 @@ nav.global-nav {
 #list-nav li a {
 	color: #000000;
 	display: block;
-	font-size: 30px;
-	padding: 15px 15px;
+	font-size: 36px;
+	padding: 15px 30px 15px 0px;
 }
 
 body.about-me #list-nav li.about-me a,
@@ -416,8 +411,16 @@ body.stories #list-nav li.stories a,
    CONTENT PAGES
    ========================================================================== */
 
-#content {
-	margin-left: 30px;
+#pageContent {
+	float: left;
+	margin-right: 20px;
+	width: 600px;
+}
+
+
+#sidebar {
+	float: left;
+	width: 280px;
 }
 
 
