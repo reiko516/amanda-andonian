@@ -173,7 +173,7 @@ nav,
 	margin: 0px auto;
 	position: relative;
 	width: 1060px;
-	top: 136px;
+	top: 150px;
 
   -webkit-box-shadow: 0px 0px 5px 0px #000000;
 		  box-shadow: 0px 0px 5px 0px #000000;
@@ -203,7 +203,7 @@ nav {
 header h1 a,
 header p {
 	color: #FFF;
-	margin-left: 30px;
+	margin: 0px 0px 0px 30px;
 }
 
 header h1 {
@@ -311,8 +311,12 @@ header p {
 	width: 25px;
 }
 
-.tiny-social ul li {
-	/*right: 0%;*/
+.tiny-social ul#geekLegacy li {
+	left: 60%;
+}
+
+.tiny-social ul.styleTechie li {
+	left: 100%;
 }
 
 .tiny-social li.twitter a {
@@ -366,6 +370,7 @@ nav.global-nav {
 #list-nav {
 	border-bottom: none;
 	font-family: "MuliLight";
+	margin-top: 20px;
 }
 
 #list-nav li {
@@ -401,7 +406,11 @@ body.stories #list-nav li.stories a,
 .recommended-site h3 {
 	float: left;
 	margin: 0px;
-	width: 250px;
+	width: 200px;
+}
+
+.recommended-site h3.style-techie {
+	width: 325px;
 }
 
 .recommended-site p {
@@ -469,10 +478,126 @@ input {
 
 .story {
 	margin-bottom: 30px;
+	width: 650px;
 }
 
 .story ul {
 	margin-top: 15px;
+}
+
+/* ==========================================================================
+   PORTFOLIO PAGE
+   ========================================================================== */
+
+#graphicDesign,
+#writing {
+	margin-top: 30px;
+}
+
+.design-samples,
+.writing-samples {
+	margin: 30px 0px;
+}
+
+.design-samples ul li,
+.writing-samples ul li {
+	float: left;
+	margin-top: 15px;
+	overflow: hidden;
+	position: relative;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.design-samples ul li a,
+.writing-samples ul li a {
+	display: block;
+}
+
+.design-samples ul li a {
+	height: 223px;
+	margin-right: 10px; 
+	width: 223px;
+}
+
+.writing-samples ul li a {
+	height: 138px;
+	margin: 0px 30px;
+	width: 138px;	
+}
+
+.design-samples ul li.landing1 a {
+	background: url("../images/portfolio-thumbs.png") -3px -591px;
+}
+
+.design-samples ul li.landing2 a {
+	background: url("../images/portfolio-thumbs.png") -3px -821px;
+}
+
+.design-samples ul li.landing3 a {
+	background: url("../images/portfolio-thumbs.png") -3px -1048px;
+}
+
+.design-samples ul li.ms-home a {
+	background: url("../images/portfolio-thumbs.png") -3px -1276px;
+}
+
+.design-samples ul li.ms-products a {
+	background: url("../images/portfolio-thumbs.png") -3px -1504px;
+}
+
+.design-samples ul li.ms-banner a {
+	background: url("../images/portfolio-thumbs.png") -3px -1734px;
+}
+
+.design-samples ul li.quickbooks a {
+	background: url("../images/portfolio-thumbs.png") -3px -1961px;
+}
+
+.design-samples ul li.remarketing1 a {
+	background: url("../images/portfolio-thumbs.png") -3px -2189px;
+}
+
+.design-samples ul li.remarketing2 a {
+	background: url("../images/portfolio-thumbs.png") -3px -2417px;
+}
+
+.design-samples ul li.email1 a {
+	background: url("../images/portfolio-thumbs.png") -3px -2645px;
+}
+
+.design-samples ul li.email2 a {
+	background: url("../images/portfolio-thumbs.png") -3px -2874px;
+}
+
+.design-samples ul li.email3 a {
+	background: url("../images/portfolio-thumbs.png") -3px -3102px;
+}
+
+.writing-samples ul li.frozen-ridge a {
+	background: url("../images/portfolio-thumbs.png") -1px -1px;
+}
+
+.writing-samples ul li.scripted a {
+	background: url("../images/portfolio-thumbs.png") -2px -148px;
+}
+
+.writing-samples ul li.bs a {
+	background: url("../images/portfolio-thumbs.png") 0px -289px;
+	height: 145px;
+	width: 145px;
+}
+
+.writing-samples ul li.livelens a {
+	background: url('../images/portfolio-thumbs.png') no-repeat -1px -438px;
+	width: 200px;
+	height: 65px;
+}
+
+.writing-samples ul li.veros a {
+	background: url('../images/portfolio-thumbs.png') no-repeat 0 -504px;
+	width: 230px;
+	height: 81px;
 }
 
 /* ==========================================================================
