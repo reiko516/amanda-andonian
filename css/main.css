@@ -437,8 +437,12 @@ body.stories #list-nav li.stories a,
 }
 
 #sidebar h3 {
-	border-bottom: 1px solid #000000;
+	background: #000000;
+	color: #FFFFFF;
+	height: 50px;
 	margin: 20px 0px;
+	padding: 9px 0px 0px 15px;
+	/*text-align: center;*/
 }
 
 button {
@@ -478,6 +482,9 @@ input {
 	padding-bottom: 15px; 
 }
 
+#myTweets li.tweet a {
+	color: #000000;
+}
 
 /* ==========================================================================
    STORIES PAGE
