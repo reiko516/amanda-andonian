@@ -93,6 +93,19 @@ textarea {
    GLOBAL STYLES
    ========================================================================== */
 
+body {
+    background: url("../images/bg_texture.png");
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+}
+
+#wrapper {
+    background: url("../images/header_bg.png") repeat-x;
+}
+/* ==========================================================================
+   GLOBAL TYPOGRAPHIC STYLES
+   ========================================================================== */
+
 @font-face {
     font-family: 'MuliLight';
     src: url('../fonts/muli/Muli-Light-webfont.eot');
@@ -118,11 +131,6 @@ textarea {
 }
 
 
-#body {
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-}
-
 a {
     color: #DF4D05;
     text-decoration: none;
@@ -136,37 +144,243 @@ h1,
 h2,
 h3 {
     font-family: "MuliRegular";
-    font-weight: bold;
+    margin-left: 30px;
 }
 
+h2 {
+    font-size: 30px;
+}
 
+h3 {
+    font-size: 24px;
+}
 
-header h1,
+/* ==========================================================================
+   LAYOUT
+   ========================================================================== */
+
+footer,
+#globalHeader,
+nav,
+#recommended {
+    margin: 0px auto;
+    width: 960px;
+}
+
+#main {
+    background: #FFF;
+    margin: 0px auto;
+    position: relative;
+    width: 1000px;
+    top: 150px;
+
+  -webkit-box-shadow: 0px 0px 5px 0px #000000;
+          box-shadow: 0px 0px 5px 0px #000000;
+
+}
+
+nav {
+    margin-bottom: 100px;
+}
+
+/* ==========================================================================
+   HEADER STYLES
+   ========================================================================== */
+
+#headerSubheader {
+    float: left;
+    margin: 0px;
+    padding-top: 50px;
+    width: 500px;
+}
+
+header h1 a,
 header p {
-    color: #FFF
+    color: #FFF;
 }
 
 header h1 {
     font-size: 48px;
 }
 
+header h1 a:hover {
+    text-decoration: none;
+}
+
 header p {
     font-family: "MuliLight";
     font-size: 18px;
+    margin-left: 30px;
 }
 
 
+/* ==========================================================================
+   SOCIAL ICONS
+   ========================================================================== */
+
+#mySocial,
+.tiny-social {
+    float: left;
+}
+
+#mySocial {
+    padding-top: 50px;
+    width: 300px;
+}
+
+#mySocial ul li,
+.tiny-social ul li {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+#mySocial ul li {
+    left: 70%;
+}
+
+#mySocial ul li a {
+    display: block;
+    height: 45px;
+    margin: 25px 15px 25px 0px;
+    width: 45px;
+}
+
+#mySocial li.twitter a {
+    background: url("../images/social_icons.png") no-repeat -5px -5px;
+}
+
+#mySocial li.twitter a:hover {
+    background: url("../images/social_icons.png") no-repeat -5px -54px;
+}
+
+#mySocial li.twitter a:active {
+    background: url("../images/social_icons.png") no-repeat -5px -103px;
+}
+
+#mySocial li.facebook a {
+    background: url("../images/social_icons.png") no-repeat -5px -151px;
+}
+
+#mySocial li.facebook a:hover {
+    background: url("../images/social_icons.png") no-repeat -5px -199px;
+}
+
+#mySocial li.facebook a:active {
+    background: url("../images/social_icons.png") no-repeat -5px -248px;
+}
+
+#mySocial li.linkedin a {
+    background: url("../images/social_icons.png") no-repeat -5px -296px;
+}
+
+#mySocial li.linkedin a:hover {
+    background: url("../images/social_icons.png") no-repeat -5px -344px;
+}
+
+#mySocial li.linkedin a:active {
+    background: url("../images/social_icons.png") no-repeat -5px -394px;
+}
+
+#mySocial li.google-plus a {
+    background: url("../images/social_icons.png") no-repeat -5px -586px;
+}
+
+#mySocial li.google-plus a:hover {
+    background: url("../images/social_icons.png") no-repeat -5px -635px;
+}
+
+#mySocial li.google-plus a:active {
+    background: url("../images/social_icons.png") no-repeat -5px -684px;
+}
 
 
+.tiny-social ul li a {
+    display: block;
+    height: 25px;
+    margin: 5px 2px;
+    width: 25px;
+}
 
+.tiny-social ul li {
+    /*right: 0%;*/
+}
 
+.tiny-social li.twitter a {
+    background: url("../images/social_icons.png") no-repeat -5px -731px;
+}
 
+.tiny-social li.facebook a {
+    background: url("../images/social_icons.png") no-repeat -5px -759px;
+}
 
+.tiny-social li.youtube a {
+    background: url("../images/social_icons.png") no-repeat -5px -787px;
+}
 
+.tiny-social li.rss a {
+    background: url("../images/social_icons.png") no-repeat -5px -815px;
+}
 
+/* ==========================================================================
+   HOME PAGE NAVIGATION
+   ========================================================================== */
 
+nav {
+    position: relative;
+    top: 50px;
+}
 
+.home-nav h2 {
+    font-family: "MuliLight";
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0px;
+    text-align: center;
+}
 
+.home-nav {
+    float: left;
+    margin: 0px 30px;
+}
+
+/* ==========================================================================
+   HOME PAGE - Recommended Sites
+   ========================================================================== */
+
+.recommended-site {
+    float: left;
+    margin-left: 30px;
+    width: 435px;
+}
+
+.recommended-site h3 {
+    float: left;
+    margin: 0px;
+    width: 250px;
+}
+
+.recommended-site p {
+    clear: both;
+}
+
+.recommended-site img {
+    border: 1px solid #c3c3c3;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+    border-top: 1px solid #000000;
+    padding: 20px 0px;
+    margin-top: 20px;
+    text-align: right;
+    width: 900px
+}
 
 /* ==========================================================================
    Helper classes
@@ -267,6 +481,13 @@ header p {
 
 .clearfix {
     *zoom: 1;
+}
+
+/* Box Model Hack */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
 }
 
 /* ==========================================================================
