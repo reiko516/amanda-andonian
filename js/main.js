@@ -64,20 +64,22 @@ $(document).ready(function() {
 		dataType: "jsonp",
 		success: function(data) {
 			console.log(data);
-			for (var i = 0; i < 5; i++) {
+			for (var i = 0; i < 6; i++) {
 				var li = document.createElement("li");
 				var li = $("<li></li>")
+					.text(data.results[i].text)
 					.addClass("tweet")
 					.appendTo("#myTweets");
 
-				var URL = "http://twitter.com/reiko516/status/"
-				var tweet_link = $("<a></a>")		
-					.attr({
-						"href": URL + data.results[i].id_str,
-						"target": "_blank"
-					})
-					.text(data.results[i].text)
-					.prependTo(li);
+				// var URL = "http://twitter.com/reiko516/status/"
+				// var tweet_link = $("<a></a>")		
+				// 	.attr({
+				// 		"href": URL + data.results[i].id_str,
+				// 		"target": "_blank"
+				// 	})
+				// 	.text(data.results[i].text)
+				// 	.prependTo(li);
+		
 			}
 		}
 	})

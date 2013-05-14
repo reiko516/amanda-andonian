@@ -156,6 +156,13 @@ p {
 	margin-top: 15px;
 }
 
+footer,
+header p,
+.home-nav h2,
+#list-nav {
+	font-family: "MuliLight";
+}
+
 /* ==========================================================================
    LAYOUT
    ========================================================================== */
@@ -169,7 +176,7 @@ nav,
 }
 
 #main {
-	background: #FFF;
+	background: #FFFFFF;
 	margin: 0px auto;
 	position: relative;
 	width: 1060px;
@@ -202,7 +209,7 @@ nav {
 
 header h1 a,
 header p {
-	color: #FFF;
+	color: #FFFFFF;
 	margin: 0px 0px 0px 30px;
 }
 
@@ -215,17 +222,19 @@ header h1 a:hover {
 }
 
 header p {
-	font-family: "MuliLight";
 	font-size: 18px;
 }
 
 
 /* ==========================================================================
-   SOCIAL ICONS
+   SOCIAL ICONS (Header, Home, About Me)
    ========================================================================== */
 
 #mySocial,
-.tiny-social {
+#mySocial ul li,
+#socialAboutMe ul li,
+.tiny-social,
+.tiny-social ul li {
 	float: left;
 }
 
@@ -237,11 +246,16 @@ header p {
 #mySocial ul li,
 #socialAboutMe ul li,
 .tiny-social ul li {
-	float: left;
 	overflow: hidden;
 	position: relative;
 	text-indent: 100%;
 	white-space: nowrap;
+}
+
+#mySocial ul li a,
+#socialAboutMe ul li a,
+.tiny-social ul li a {
+	display: block;
 }
 
 #mySocial ul li {
@@ -249,10 +263,21 @@ header p {
 }
 
 #mySocial ul li a {
-	display: block;
 	height: 45px;
 	margin: 25px 15px 25px 0px;
 	width: 45px;
+}
+
+#socialAboutMe ul li a{
+	height: 62px;
+	margin: 20px 20px 30px 0px;
+	width: 62px;
+}
+
+.tiny-social ul li a {
+	height: 25px;
+	margin: 5px 2px;
+	width: 25px;
 }
 
 #mySocial li.twitter a {
@@ -304,13 +329,6 @@ header p {
 }
 
 
-.tiny-social ul li a {
-	display: block;
-	height: 25px;
-	margin: 5px 2px;
-	width: 25px;
-}
-
 .tiny-social ul#geekLegacy li {
 	left: 60%;
 }
@@ -334,6 +352,64 @@ header p {
 .tiny-social li.rss a {
 	background: url("../images/social_icons.png") no-repeat -5px -815px;
 }
+
+
+#socialAboutMe ul li.twitter a {
+	background: url('../images/about-social.png') no-repeat 0 0px;
+}
+
+#socialAboutMe ul li.twitter a:hover {
+	background: url('../images/about-social.png') no-repeat 0 -66px;
+}
+
+#socialAboutMe ul li.facebook a {
+	background: url('../images/about-social.png') no-repeat 0 -132px;
+}
+
+#socialAboutMe ul li.facebook a:hover {
+	background: url('../images/about-social.png') no-repeat 0 -198px;
+}
+
+#socialAboutMe ul li.google-plus a {
+	background: url('../images/about-social.png') no-repeat 0 -263px;
+}
+
+#socialAboutMe ul li.google-plus a:hover {
+	background: url('../images/about-social.png') no-repeat 0 -329px;
+}
+
+#socialAboutMe ul li.github a {
+	background: url('../images/about-social.png') no-repeat 0 -395px;
+}
+
+#socialAboutMe ul li.github a:hover {
+	background: url('../images/about-social.png') no-repeat 0 -461px;
+}
+
+#socialAboutMe ul li.linkedin a {
+	background: url('../images/about-social.png') no-repeat 0 -527px;
+}
+
+#socialAboutMe ul li.linkedin a:hover {
+	background: url('../images/about-social.png') no-repeat 0 -593px;
+}
+
+#socialAboutMe ul li.pinterest a {
+	background: url('../images/about-social.png') no-repeat 0 -658px;
+}
+
+#socialAboutMe ul li.pinterest a:hover {
+	background: url('../images/about-social.png') no-repeat 0 -724px;
+}
+
+#socialAboutMe ul li.instagram a {
+	background: url('../images/about-social.png') no-repeat 0 -790px;
+}
+
+#socialAboutMe ul li.instagram a:hover {
+	background: url('../images/about-social.png') no-repeat 0 -856px;
+}
+
 
 /* ==========================================================================
    HOME PAGE NAVIGATION
@@ -405,12 +481,16 @@ body.stories #list-nav li.stories a,
 
 .recommended-site h3 {
 	float: left;
-	margin: 0px;
 	width: 200px;
 }
 
 .recommended-site h3.style-techie {
 	width: 325px;
+}
+
+.recommended-site h3,
+.tiny-social {
+	margin: 10px 0px;
 }
 
 .recommended-site p {
@@ -442,7 +522,6 @@ body.stories #list-nav li.stories a,
 	height: 50px;
 	margin: 20px 0px;
 	padding: 9px 0px 0px 15px;
-	/*text-align: center;*/
 }
 
 button {
@@ -631,70 +710,6 @@ input {
 #contactMe h2 {
 	margin: 0px;
 }
-
-#socialAboutMe ul li a{
-	display: block;
-	height: 62px;
-	margin: 20px 20px 30px 0px;
-	width: 62px;
-}
-
-#socialAboutMe ul li.twitter a {
-	background: url('../images/about-social.png') no-repeat 0 0px;
-}
-
-#socialAboutMe ul li.twitter a:hover {
-	background: url('../images/about-social.png') no-repeat 0 -66px;
-}
-
-#socialAboutMe ul li.facebook a {
-	background: url('../images/about-social.png') no-repeat 0 -132px;
-}
-
-#socialAboutMe ul li.facebook a:hover {
-	background: url('../images/about-social.png') no-repeat 0 -198px;
-}
-
-#socialAboutMe ul li.google-plus a {
-	background: url('../images/about-social.png') no-repeat 0 -263px;
-}
-
-#socialAboutMe ul li.google-plus a:hover {
-	background: url('../images/about-social.png') no-repeat 0 -329px;
-}
-
-#socialAboutMe ul li.github a {
-	background: url('../images/about-social.png') no-repeat 0 -395px;
-}
-
-#socialAboutMe ul li.github a:hover {
-	background: url('../images/about-social.png') no-repeat 0 -461px;
-}
-
-#socialAboutMe ul li.linkedin a {
-	background: url('../images/about-social.png') no-repeat 0 -527px;
-}
-
-#socialAboutMe ul li.linkedin a:hover {
-	background: url('../images/about-social.png') no-repeat 0 -593px;
-}
-
-#socialAboutMe ul li.pinterest a {
-	background: url('../images/about-social.png') no-repeat 0 -658px;
-}
-
-#socialAboutMe ul li.pinterest a:hover {
-	background: url('../images/about-social.png') no-repeat 0 -724px;
-}
-
-#socialAboutMe ul li.instagram a {
-	background: url('../images/about-social.png') no-repeat 0 -790px;
-}
-
-#socialAboutMe ul li.instagram a:hover {
-	background: url('../images/about-social.png') no-repeat 0 -856px;
-}
-
 
 /* ==========================================================================
    FOOTER
