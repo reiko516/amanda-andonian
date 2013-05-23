@@ -2,41 +2,33 @@
 $(document).ready(function() {
 
 
-	// var div = $("<div></div>")
-	// 	.addClass("blog-hover")
-	// 	.text("Blog Post")
-	// 	.css({
-	// 		"background": "#000000",
-	// 		"left": "0px",
-	// 		"height": "180px",
-	// 		"opacity": 0.2,				
-	// 		"position": "absolute",
-	// 		"top": "50px",
-	// 		"width": "180px",
-	// 		"z-index": 2
-	// 	})
-	// 	.hide();	
+//===========================================
+//  HOME PAGE NAV ITEMS
+//===========================================
 
+// hides the div where the nav item descriptions
+// are, then creates the animated effect when
+// you hover over those items
 
-	// $(".blog").on("mouseover", function(event) {
-	// 	event.preventDefault();
+	// var navItem = $(".blog-hover")
 
-	// 	div.insertBefore("a.blog")
-	// 		.show(100);
-	// })
+	// navItem.fadeTo(1, 0);
 
-	// var remove = $(".blog-hover").on("mouseout", function() {
-	// 	console.log("delete!")
-	// 	event.preventDefault();
+	// function mouseOn() {
+	// 	$(this).fadeTo(20,1);
+	// }
 
-	// 	// div.hide(100, function() {
-	// 	// 	div.remove();
-	// 	// });
-	// })
+	// function mouseOff() {
+	// 	$(this).fadeTo(1, 0);
+	// }
+
+	// navItem.hover(mouseOn, mouseOff);
 
 //===========================================
 //  PORTFOLIO SCREENSHOTS
 //===========================================
+
+// creates lightbox for portfolio screenshots
 
 	$("li.landing1 a").fancybox();
 	$("li.landing2 a").fancybox();
@@ -52,7 +44,7 @@ $(document).ready(function() {
 
 //==========================================
 //  TWITTER FEED
-//===========================================
+//==========================================
 
 	var TWITTER_PROFILE = "https://search.twitter.com/search.json?q=+from%3Areiko516";
 
@@ -64,21 +56,21 @@ $(document).ready(function() {
 		dataType: "jsonp",
 		success: function(data) {
 			console.log(data);
-			for (var i = 0; i < 6; i++) {
-				var li = document.createElement("li");
+			for (var i = 0; i < 5; i++) {
+
 				var li = $("<li></li>")
-					.text(data.results[i].text)
 					.addClass("tweet")
 					.appendTo("#myTweets");
 
-				// var URL = "http://twitter.com/reiko516/status/"
-				// var tweet_link = $("<a></a>")		
-				// 	.attr({
-				// 		"href": URL + data.results[i].id_str,
-				// 		"target": "_blank"
-				// 	})
-				// 	.text(data.results[i].text)
-				// 	.prependTo(li);
+				var URL = "http://twitter.com/reiko516/status/"
+
+				var tweet_link = $("<a></a>")		
+					.attr({
+						"href": URL + data.results[i].id_str,
+						"target": "_blank"
+					})
+					.text(data.results[i].text)
+					.prependTo(li);
 		
 			}
 		}
