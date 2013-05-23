@@ -132,7 +132,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.blog-hover {
 	font-family: "MuliRegular";
 }
 
@@ -431,6 +432,29 @@ nav {
 .home-nav {
 	float: left;
 	margin-right: 60px;
+
+}
+
+.blog-hover p,
+.hover-box {
+	left: 0px;
+	height: 180px;				
+	position: absolute;
+	top: 50px;
+	width: 180px;
+	z-index: 2;
+}
+
+.blog-hover p {
+	font-size: 18px;
+	line-height: 1.3;
+	margin: 0px;
+	padding: 20px;
+}
+
+.hover-box {
+	background: #FFFFFF;
+	opacity: 0.5;
 }
 
 /* ==========================================================================
