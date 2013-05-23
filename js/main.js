@@ -10,19 +10,19 @@ $(document).ready(function() {
 // are, then creates the animated effect when
 // you hover over those items
 
-	// var navItem = $(".blog-hover")
+	var navItem = $(".hover-box")
 
-	// navItem.fadeTo(1, 0);
+	navItem.fadeTo(1, 0);
 
-	// function mouseOn() {
-	// 	$(this).fadeTo(20,1);
-	// }
+	function mouseOn() {
+		$(this).fadeTo(500,1);
+	}
 
-	// function mouseOff() {
-	// 	$(this).fadeTo(1, 0);
-	// }
+	function mouseOff() {
+		$(this).fadeTo(500, 0);
+	}
 
-	// navItem.hover(mouseOn, mouseOff);
+	navItem.hover(mouseOn, mouseOff);
 
 //===========================================
 //  PORTFOLIO SCREENSHOTS
