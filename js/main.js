@@ -46,7 +46,7 @@ $(document).ready(function() {
 //  TWITTER FEED
 //==========================================
 
-	var TWITTER_PROFILE = "https://search.twitter.com/search.json?q=+from%3Areiko516";
+	var TWITTER_PROFILE = "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=reiko516";
 
 	$.ajax({
 		url: TWITTER_PROFILE,
@@ -55,23 +55,22 @@ $(document).ready(function() {
 			},
 		dataType: "jsonp",
 		success: function(data) {
-			console.log(data);
+
 			for (var i = 0; i < 5; i++) {
 
 				var li = $("<li></li>")
 					.addClass("tweet")
-					.appendTo("#myTweets");
+					.appendTo("#myTweets")
 
 				var URL = "http://twitter.com/reiko516/status/"
 
 				var tweet_link = $("<a></a>")		
 					.attr({
-						"href": URL + data.results[i].id_str,
+						"href": URL + data[i].id_str,
 						"target": "_blank"
 					})
-					.text(data.results[i].text)
+					.text(data[i].text)
 					.prependTo(li);
-		
 			}
 		}
 	})
